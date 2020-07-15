@@ -25,7 +25,7 @@ SECRET_KEY = 'lvm*c(8=0v+9^j0jvctj%wn5&yq3-w%or%trc)l12#lw&xg-@p'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.hakuna0314.com']
+ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1', '112.124.4.35', 'localhost', '.hakuna0314.com']
 
 
 # Application definition
@@ -56,7 +56,7 @@ ROOT_URLCONF = 'blogproject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
